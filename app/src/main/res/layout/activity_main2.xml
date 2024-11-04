@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/Nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/Cognom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cognom"
+            android:layout_below="@id/Nom"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Edat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Edat"
+            android:layout_below="@id/Cognom"
+            android:layout_marginTop="8dp" />
+
+        <!-- Gènere amb RadioButtons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gènere"
+            android:layout_below="@id/Edat"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/Genere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Edat"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+            <RadioButton
+                android:id="@+id/Dona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dona" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/Telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Telèfon"
+            android:layout_below="@id/Genere"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_below="@id/Telefon"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Usuari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuari"
+            android:layout_below="@id/Email"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_below="@id/Usuari"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_below="@id/Password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</ScrollView>

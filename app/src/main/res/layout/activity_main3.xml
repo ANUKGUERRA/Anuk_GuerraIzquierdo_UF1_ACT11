@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity3">
+
+        <EditText
+            android:id="@+id/Nom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/Cognom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Cognom"
+            app:layout_constraintTop_toBottomOf="@id/Nom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/Edat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Edat"
+            app:layout_constraintTop_toBottomOf="@id/Cognom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvGenere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gènere"
+            app:layout_constraintTop_toBottomOf="@id/Edat"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgGenere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tvGenere"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+            <RadioButton
+                android:id="@+id/rbDona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dona" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/Telefon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Telèfon"
+            app:layout_constraintTop_toBottomOf="@id/rgGenere"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            app:layout_constraintTop_toBottomOf="@id/Telefon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/Usuari"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Usuari"
+            app:layout_constraintTop_toBottomOf="@id/Email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:layout_constraintTop_toBottomOf="@id/Usuari"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            app:layout_constraintTop_toBottomOf="@id/Password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
